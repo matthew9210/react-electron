@@ -1,0 +1,30 @@
+.frame
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+        "frame-header frame-header frame-header frame-header" 40px
+        "frame-body frame-body frame-body frame-body" calc(100% - 82px)
+        "frame-footer frame-footer frame-footer frame-footer" 40px
+}
+
+.frame-header
+{
+    background-color: darkgray;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+}
+
+.frame-body
+{
+    grid-column: span 4;
+    align-self: center;
+}
+
+.frame-footer
+{
+    grid-column: span 4;
+    border-top: solid 1px;
+    background-color: midnightblue;
+}
