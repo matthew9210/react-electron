@@ -5,8 +5,8 @@
     display: grid;
     grid-template: 
         "frame-header frame-header frame-header frame-header" 40px
-        "frame-body frame-body frame-body frame-body" calc(100% - 82px)
-        "frame-footer frame-footer frame-footer frame-footer" 40px
+        "frame-body frame-body frame-body frame-body" calc(100% - 62px)
+        "frame-footer frame-footer frame-footer frame-footer" 20px
 }
 
 .frame-header
@@ -14,6 +14,11 @@
     background-color: darkgray;
     border-bottom: solid 1px;
     border-right: solid 1px;
+}
+
+.frame-header:hover
+{
+    background-color: dimgrey;
 }
 
 .frame-body
